@@ -7,7 +7,8 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@ckeditor/strapi-plugin-ckeditor": "^0.0.7",
@@ -15,10 +16,11 @@
     "@strapi/plugin-i18n": "4.13.4",
     "@strapi/plugin-users-permissions": "4.13.4",
     "@strapi/strapi": "4.13.4",
+    "patch-package": "^8.0.0",
     "pg": "8.8.0"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Antonio Silva <tonybsilvadev@gmail.com>"
   },
   "strapi": {
     "uuid": "d4d1d625-7482-46f7-9bfe-3e89f054a439"
