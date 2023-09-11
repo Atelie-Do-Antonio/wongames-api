@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "publishers",
   "info": {
-    "singularName": "category",
-    "pluralName": "categories",
-    "displayName": "category"
+    "singularName": "publisher",
+    "pluralName": "publishers",
+    "displayName": "publisher"
   },
   "options": {
     "draftAndPublish": false
@@ -37,9 +37,9 @@
     },
     "games": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::game.game",
-      "mappedBy": "developers"
+      "mappedBy": "publisher"
     }
   }
 }
