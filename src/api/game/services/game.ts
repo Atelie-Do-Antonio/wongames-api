@@ -6,10 +6,12 @@ import { factories } from "@strapi/strapi";
 
 export default factories.createCoreService("api::game.game", ({}) => ({
   async populate(params) {
-    const gogApi = `https://www.gog.com/games/ajax/filtered?mediaType=game`;
+    const gogApi = `https://catalog.gog.com/v1/catalog?limit=50&order=desc%3Atrending`;
 
-    const { data: { products } } = await axios.get(gogApi);
+    const {
+      data: { products },
+    } = await axios.get(gogApi);
 
-    console.log( products[0] )
+    console.log(products);
   },
 }));
