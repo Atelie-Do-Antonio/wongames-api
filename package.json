@@ -16,8 +16,10 @@
     "@strapi/plugin-i18n": "4.13.4",
     "@strapi/plugin-users-permissions": "4.13.4",
     "@strapi/strapi": "4.13.4",
+    "jsdom": "^22.1.0",
     "patch-package": "^8.0.0",
-    "pg": "8.8.0"
+    "pg": "8.8.0",
+    "slugify": "^1.6.6"
   },
   "author": {
     "name": "Antonio Silva <tonybsilvadev@gmail.com>"
@@ -29,5 +31,8 @@
     "node": ">=16.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jsdom": "^21.1.2"
+  }
 }
