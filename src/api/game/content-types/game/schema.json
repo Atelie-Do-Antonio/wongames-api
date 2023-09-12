@@ -122,7 +122,7 @@
     "developers": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::category.category",
+      "target": "api::developer.developer",
       "inversedBy": "games"
     },
     "publisher": {
